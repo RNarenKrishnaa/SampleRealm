@@ -13,10 +13,6 @@ class TasksDBHelper {
     
     
     func getAllTasks() -> Results<Task> {
-        let taskClass : Array<TaskClass> = []
-        for i in taskClass{
-            let arrayList = taskClass[i]
-        }
         let task = try! Realm().objects(Task.self)
         print(task.count)
         return task
